@@ -11,6 +11,7 @@ def remove_elements(list_to_remove_elements):
     elif largo >= 6:
         return list_to_remove_elements[1:4]+list_to_remove_elements[6:]
 
+
 def add_elements(list_to_add_elements):
     list_to_add_elements= ["Pink"]+list_to_add_elements+["Yellow"]
     return list_to_add_elements
@@ -24,6 +25,15 @@ def check_lists(list_to_compare1, list_to_compare2):
         return False
     elif list_to_compare1[2]==list_to_compare2[2]:
         return True
+
+#list_of_lists_to_modify = [[1, 2, 3], [4, 5, 6, 7, 8], [9, 10, 11, 12]]
+                            #0  1  2    0 1   2  3  4    0  1    2   3
+
+def list_of_lists(list_of_lists_to_modify):
+    a=list_of_lists_to_modify[0][:2]
+    b= list_of_lists_to_modify[1][1:4]
+    c=list_of_lists_to_modify[2][-2:]
+    return [a,b,c]
 
 #list_of_lists_to_modify = [[1, 2, 3], [4, 5, 6, 7, 8], [9, 10, 11, 12]]
                             #0  1  2    0 1   2  3  4    0  1    2   3
